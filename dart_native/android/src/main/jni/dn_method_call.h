@@ -27,7 +27,6 @@ extern "C"
     void *callNativeVoidMethod(JNIEnv *env, jobject object, jmethodID methodId, jvalue *arguments);
 
     void *callNativeStringMethod(JNIEnv *env, jobject object, jmethodID methodId, jvalue *arguments);
-    void *callNativeObjectMethod(JNIEnv *env, jobject object, jmethodID methodId, jvalue *arguments);
 
     const std::map<char, std::function<CallNativeMethod> > methodCallerMap = {
         {'C', callNativeCharMethod},

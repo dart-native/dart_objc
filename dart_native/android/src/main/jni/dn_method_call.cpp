@@ -73,7 +73,3 @@ void *callNativeStringMethod(JNIEnv *env, jobject object, jmethodID methodId, jv
   auto javaString = (jstring)env->CallObjectMethodA(object, methodId, arguments);
   return convertToDartUtf16(env, javaString);
 }
-
-void *callNativeObjectMethod(JNIEnv *env, jobject object, jmethodID methodId, jvalue *arguments)
-{
-}
